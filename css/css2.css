@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box; /** border-box= diminui o valor numérico do conteúdo*/
+
+}
+body{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;      /** space-between= espaçamento somente entre as colunas*/
+    margin:0;
+    background-color: beige;
+}
+header,footer{
+    height: 60px;
+}
+header{
+    background-color: beige;
+}
+
+main{
+    /*background-color: gray;*/
+    min-height: calc(100vh - 120px);         /** 100vh= altura da tela*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  /** space-around: espaçamento entre os lados e ao redor*/
+    padding: 10px 0        /** o 0 é a medida para os lados**/
+}
+
+main div{
+    width: 33%;  /** usado % devido o alinhemento do elemento em relação ao elemento pai*/
+                 /** cada coluna ocupa 33% da tela, ou seja, 99% da tela está ocupada*/
+    background-color: rgb(149, 237, 162);
+    height: 100%;
+}
+
+@media(max-width:768px){
+    main div{
+       width:45%; 
+    }
+}
+
+@media(max-width: 576px){
+    main div{
+        width: 100%
+    }
+}
+
+footer{ 
+    background-color: rgb(194, 247, 178);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem
+}
