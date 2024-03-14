@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title> Coluna </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"   href="css/css2.css" />
+    <meta charset="UTF-8">      
+    <title> Coluna </title>    <!-- titulo da pagina web -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- s-->
+    <link rel="stylesheet"   href="css/css2.css" /> <!-- associar esse arquivo html para um arquivo css-->
 </head>
 <body>
     <header>
-        <h1> </h1>
+        <h1> Design Responsivo </h1>
+        <p>||</p>
+        <h2> 11/03/24 </h2>
     </header>
     <main>
-        <div>
-            <h3> O design responsivo é uma abordagem de design que visa adequar páginas da internet ou sites a variados tipos de dispositivos e telas, oferecendo a melhor experiência de uso para o usuário</h3>
+        <div class="coluna1">
+            <h2> O que é design responsivo? </h2>
+            <h3> O design responsivo é uma abordagem de design que visa adequar páginas da internet ou sites a variados tipos de dispositivos e telas, oferecendo a melhor experiência de uso para o usuário.       
+            </h3>
         </div>
-        <div><h3>O design responsivo é uma abordagem de design que visa adequar páginas da internet ou sites a variados tipos de dispositivos e telas, oferecendo a melhor experiência de uso para o usuário</h3></div>
-        <div><h3> O design responsivo é uma abordagem de design que visa adequar páginas da internet ou sites a variados tipos de dispositivos e telas, oferecendo a melhor experiência de uso para o usuário</h3></div>
+        <div class="coluna2">
+            <h2> CSS e design responsivo</h2>
+            <h3>Usa-se a união entre Layout fluido, imagens flexiveis e medias queries.</h3>
+            <ul>
+                <li> Layout fluido: Define-se o tamanho com % em vez de px, assim, preservam um alinhamento entre a relação do  elemento pai e o elemento filho. 
+
+                </li>
+                <li> Imagens flexiveis: Imagens que não ultrapassam o tamanho do contêiner(pai). Usa-se a "max-width:100%", assim, a imagem nunca passará do pai.
+                </li>
+
+                <li> Media queries: Usado para "adaptar" um arquivo html de acordo com o tamanho/resolução do dispositivo. Usa-se "@media (min-width: valor da tela do dispositivo). Também se altera, no caso de colunas, a 'width' da 'div'.
+                </li>  
+
+            </ul>            
+        </div>
+
+        <div class="coluna3">
+            <h2> Flex-Box, o que é e como usar.</h2>
+            <h3>O flex-box é uma propriedade que usa os comandos'flex' do CSS. É dividido em Flex Container (usado quando tem 'display;flex') e Flex Item(São os filhos do flex container).  Os flex container são: </h3>
+                <ul>
+                    <li> Display: flex </li>
+                    <li> Flex-direction</li>
+                    <li> Flex-wrap</li>
+                    <li> Justify-content</li>
+                    <li> Align-items/li>
+                    <li> Align-content</li>
+                </ul>          
+                <a href="https://origamid.com/projetos/flexbox-guia-completo/"> Flex-Item</a>   
+        </div>
     </main>
     <footer>
         <h4> by Andréia </h4>
